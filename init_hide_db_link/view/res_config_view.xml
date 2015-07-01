@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <record id="init_view_hide_manage_databases_link_configuration" model="ir.ui.view">
+            <field name="name">base.config.settings.hide.db.link</field>
+            <field name="model">base.config.settings</field>
+            <field name="inherit_id" ref="base_setup.view_general_configuration"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form" position="inside">
+                    <group>
+                        <label for="id" string="Manage Databases"/>
+                        <div>
+                            <div name="init_hide_db_link">
+                                <field name="init_hide_db_link_hide" class="oe_inline"/>
+                                <label for="init_hide_db_link_hide"/>
+                            </div>
+                        </div>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</openerp>

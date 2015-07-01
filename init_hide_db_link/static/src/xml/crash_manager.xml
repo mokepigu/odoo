@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="init_crash_manager_view" xml:space="preserve">
+   <t t-extend="CrashManager.error">
+        <t t-jquery="div[class=oe_error_send]" t-operation="replace">
+            <div>
+                <div>
+                    <b>
+                        Please create a support ticket on <a href="http://support.init.vn/" target="_blank">support.init.vn</a> to notify INIT about this issue with the below information:
+                    </b>
+                </div>
+                <ul>
+                    <li>Time when the problem occurred</li>
+                    <li>Error message</li>
+                    <li>Steps to reproduce the problem</li>
+                    <li>Reference of the object (Sale Order, Packing, Purchase Order, Invoice, ...) for which the problem appeared</li>
+                </ul>
+                <div>
+                    <b>
+                    In case you do not have an account on the support tool, please contact the person in charge in your organization or send an email to <a href="mailto:support@init.vn" target="_blank">support@init.vn</a>
+                    </b>
+                </div>
+            </div>
+        </t>
+   </t>   
+   
+</templates>
