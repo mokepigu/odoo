@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-extend="mail.compose_message">
+        <t t-jquery=".oe_compose_log" t-operation="after">
+            <span class="oe_grey oe_sep_word">or</span>
+            <a class="show_all_logs">Show all logs</a>
+        </t>
+    </t>
+</templates>
